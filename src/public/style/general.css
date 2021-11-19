@@ -182,6 +182,45 @@ img {
     width: 100%;
     height: auto;
 }
+#map div {
+    position: absolute;
+    width: 8%;
+}
+#map .continent {
+    top: 17%;
+    right: 14%;
+}
+#map .continent img {
+    position: relative;
+    z-index: 2;
+}
+#map .continent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 60%;
+
+    padding: 5%;
+
+    font-size: 0.7em;
+    color: white;
+
+    border-radius: 100%;
+    background-color: rgba(35, 28, 28, 0.73);
+
+    transition: transform 1s ease-out;
+
+    z-index: 1;
+}
+#map .continent div span {
+    font-size: 0.6em;
+}
 
 #data-container {
     height: auto;

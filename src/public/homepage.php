@@ -16,13 +16,22 @@
         <img src="assets/logo.svg" alt="logo">
     </div>
 
-    <?php print_separator('Interact with the map and explore the stages of your hat') ?>
+    <?php print_separator('Interact with the map<br>explore the stages of your hat') ?>
 
     <div class="container vertical">
 
         <div id="map">
             <img src="assets/map.svg" alt="map">
+            <div id="asia" class="continent">
+                <img class="pin0" src="assets/icon-pin.svg" alt="pin">
+                <div class="pin1" style="transform: translate(0px);">T<span>1</span></div>
+                <div class="pin2" style="transform: translate(0px);">T<span>2</span></div>
+                <div class="pin3" style="transform: translate(0px);">T<span>3</span></div>
+                <div class="pin4" style="transform: translate(0px);">T<span>4</span></div>
+            </div>
         </div>
+
+        <script src="js/map-handler.js"></script>
 
         <div id="data-container" class="container vertical center middle">
 
@@ -32,7 +41,7 @@
                 </div>
                 <div class="body">
                     <div class="value">-99%</div>
-                    <div class="text">We use only 1 liter of water instead of the 15 used by the average hat</div>
+                    <div class="text">We use less then 1 liter of water instead of the 15 used by the average hat</div>
                 </div>
             </div>
 
