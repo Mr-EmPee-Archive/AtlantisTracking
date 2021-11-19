@@ -2,7 +2,6 @@
     /* Theme variable */
     --prime-background: #fff;
     --second-background: #eef6fa;
-    --body-text: black;
 
     /* Separator */
     --separator-first-line: #5280A6;
@@ -10,8 +9,9 @@
     --separator-text: #5280a6;
     --separator_background: #D7E1ED;
 
-    /* Bar Chart */
-    --bar-chart: #d09292;
+    /* Data-Objects */
+    --object-value: #1a366c;
+    --object-text: #585d64;
 }
 
 * {
@@ -30,8 +30,13 @@ body {
 
     background-color: #252424;
 
-    font-family: league-gothic, sans-serif;
+    font-family: sans-serif;
     font-size: 60px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
 
 .container {
@@ -64,10 +69,12 @@ body {
     width: 100%;
     height: auto;
     margin: 0;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 3%;
 
     text-align: center;
+
+    font-family: league-gothic, sans-serif;
+    font-variant: all-small-caps;
     color: var(--separator-text);
     font-size: 1.5em;
 
@@ -78,6 +85,53 @@ body {
 .bar-chart {
     width: 100%;
     height: 100%;
+}
+
+.data-object {
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    padding: 3%;
+}
+.data-object .icon {
+    width: 20%;
+}
+.data-object .body {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    margin-left: 3%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.data-object .body .value {
+
+    display: flex;
+
+    width: 100%;
+    height: 60%;
+
+    color: var(--object-value);
+    font-size: 1.5em;
+    font-weight: 900;
+
+    align-items: center;
+}
+.data-object .body .text {
+    width: 100%;
+    height: 40%;
+
+    color: var(--object-text);
+    font-size: 0.65em;
+
+    align-items: center;
 }
 
 #header {
@@ -126,8 +180,8 @@ body {
 
 }
 
-#chart-container {
-    height: 20vh;
+#data-container {
+    height: 60vh;
 }
 
 #footer .body {
@@ -141,8 +195,11 @@ body {
     justify-content: center;
 
 }
-#footer .body p {
+#footer .body img {
     width: auto;
+}
+#footer .body p {
+    width: 60%;
     margin-left: 4%;
 }
 
