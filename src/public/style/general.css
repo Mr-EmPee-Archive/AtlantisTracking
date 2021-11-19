@@ -162,26 +162,29 @@ img {
     width: 100%;
     height: auto;
 
+    padding: 1%;
+
+    background-color: var(--prime-background);
+
     font-family: sans-serif;
     font-size: 0.6em;
     font-weight: bold;
     font-variant: all-small-caps;
     color: #1a366c;
     text-align: center;
-    padding: 1%;
-
 }
 
 #map {
     position: relative;
 
+    margin-top: 5%;
+
     width: 100%;
     height: auto;
-
 }
 
 #data-container {
-    height: 60vh;
+    height: auto;
 }
 
 #footer .body {
