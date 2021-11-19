@@ -12,6 +12,11 @@
     /* Data-Objects */
     --object-value: #1a366c;
     --object-text: #585d64;
+
+    /* Map Pins */
+    --pin: #F8A52B;
+    --pin-selected: #fa7420;
+
 }
 
 * {
@@ -27,8 +32,6 @@ body {
     justify-content: center;
 
     margin: 0;
-
-    overflow: hidden;
 
     background-color: #252424;
 
@@ -167,8 +170,8 @@ img {
 }
 
 #loader-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -181,6 +184,8 @@ img {
 }
 
 #main-container {
+    display: none;
+
     max-width: 1024px;
 
     background-color: var(--second-background);
@@ -228,15 +233,19 @@ img {
     width: 100%;
     height: auto;
 }
-#map div {
+#map .pin {
     position: absolute;
+
     width: 8%;
+    cursor: pointer;
 }
-#map .continent {
-    top: 17%;
-    right: 14%;
+#map .pin svg {
+    fill: var(--pin);
 }
-#map .continent img {
+#map .pin.selected svg {
+    fill: var(--pin-selected);
+}
+#map .continent svg {
     position: relative;
     z-index: 2;
 }
@@ -266,6 +275,17 @@ img {
 }
 #map .continent div span {
     font-size: 0.6em;
+}
+#map .continent.selected div.selected {
+    background-color: var(--pin-selected);
+}
+#map #italy {
+    top: 2.5%;
+    left: 44.5%;
+}
+#map #asia {
+    top: 17%;
+    right: 14%;
 }
 
 #data-container {
