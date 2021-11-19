@@ -1,6 +1,7 @@
 :root {
     /* Theme variable */
-    --background: white;
+    --prime-background: #fff;
+    --second-background: #eef6fa;
     --body-text: black;
 
     /* Separator */
@@ -36,8 +37,7 @@ body {
 #main-container {
     max-width: 1024px;
 
-    background-color: var(--background);
-
+    background-color: var(--second-background);
 }
 
 #alert {
@@ -106,7 +106,9 @@ body {
 
 #header {
     height: 20vh;
-    margin-top: 1vh;
+    padding-top: 1vh;
+
+    background-color: var(--prime-background);
 }
 #header .logo {
 
