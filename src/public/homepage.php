@@ -9,6 +9,10 @@
 
 <body>
 
+<div id="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
 <div id="main-container" class="container vertical">
 
     <div id="alert">You should use the smartphone to surf this website</div>
@@ -72,6 +76,19 @@
     </div>
 
 </div>
+
+<script>
+
+    window.onload = () => {
+        setTimeout(disableLoading, 1000);
+    }
+
+    function disableLoading() {
+        document.getElementById("loader-wrapper").style.display = "none";
+        document.body.style.overflow = "unset";
+    }
+
+</script>
 
 </body>
 </html>
