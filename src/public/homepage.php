@@ -30,7 +30,10 @@
         </svg>
     </div>
 
+    <?php print_separator('Interact with the map and<br>explore the stages of your hat') ?>
+
     <div class="container vertical">
+
         <div id="map">
             <svg width="100%" height="100%" viewBox="0 0 686 501" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_56_5)">
@@ -196,17 +199,7 @@
             </svg>
         </div>
 
-        <?php print_separator('Track the green trip of your hat') ?>
-
-        <div id="chart-container" class="container bottom center">
-
-            <?php print_bar_chart(100, "#e08550"); ?>
-            <?php print_bar_chart(50, "#e0d950"); ?>
-            <?php print_bar_chart(80, "#50cfe0"); ?>
-
-        </div>
-
-        <?php print_footer('<img src="assets/icon-how.svg"> <p>FIND OUT HOW THIS<br>IS POSSIBLE</p>'); ?>
+        <?php print_footer('<img alt="icon-how" src="assets/icon-how.svg"> <p>CLICK TO FIND OUT<br>HOW THIS IS POSSIBLE</p>'); ?>
 
     </div>
 

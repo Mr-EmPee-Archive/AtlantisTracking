@@ -116,6 +116,9 @@ body {
     height: 100%;
 
 }
+#header + .separator .top {
+    background-color: var(--prime-background);
+}
 
 #map {
 
