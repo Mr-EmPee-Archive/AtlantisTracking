@@ -20,11 +20,15 @@
         echo '</div>';
 
     }
-    function print_footer($body) {
+    function print_footer() {
 
         echo '<div id="footer" class="separator">';
         print_svg_separator("top");
-        echo '<div class="body">' . $body . '</div>';
+        echo '
+        <div class="body">
+            <img src="assets/icon-how.svg" alt="how">
+            <a href="https://atlantisheadwear.com/it/sostenibilita/" target="_blank"><p>LEARN MORE<br>ABOUT THE TOPIC</p></a>
+        </div>';
         echo '</div>';
 
     }
@@ -115,7 +119,7 @@
 
                 <div id="data-container" class="container vertical center middle"></div>
 
-                <?php print_footer('<p>CLICK TO LEARN MORE ABOUT THE TOPIC</p>'); ?>
+                <?php print_footer(); ?>
             </div>
 
         </div>

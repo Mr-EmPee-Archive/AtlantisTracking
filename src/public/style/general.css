@@ -304,11 +304,15 @@ img {
 
 }
 #footer .body img {
-    width: auto;
+    width: 40%;
 }
-#footer .body p {
+#footer .body a {
     width: 60%;
     margin-left: 4%;
+
+    text-decoration: none;
+    color: var(--separator-text)
+
 }
 
 @media screen and (min-width: 1024px){
