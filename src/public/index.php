@@ -115,7 +115,7 @@
 
                 <div id="data-container" class="container vertical center middle"></div>
 
-                <?php print_footer('<img alt="icon-how" src="assets/icon-how.svg"> <p>CLICK TO LEARN MORE ABOUT THE TOPIC</p>'); ?>
+                <?php print_footer('<p>CLICK TO LEARN MORE ABOUT THE TOPIC</p>'); ?>
             </div>
 
         </div>

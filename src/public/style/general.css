@@ -312,13 +312,46 @@ img {
 }
 
 @media screen and (min-width: 1024px){
-
     #main-container {
         border: 10px solid black;
     }
 
     #alert {
         display: block;
+    }
+}
+@media screen and (max-width: 750px) {
+
+    body {
+        font-size: 50px;
+    }
+
+}
+@media screen and (max-width: 630px) {
+
+    body {
+        font-size: 40px;
+    }
+
+}
+@media screen and (max-width: 510px) {
+
+    body {
+        font-size: 30px;
+    }
+
+}
+@media screen and (max-width: 370px) {
+
+    body {
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 260px) {
+
+    body {
+        font-size: 18px;
     }
 
 }
