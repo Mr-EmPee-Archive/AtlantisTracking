@@ -21,6 +21,10 @@
     --menu_size: 130px;
     --menu_background: #1a366c;
     --menu_text: white;
+
+    /* Tiers */
+    --back_text: #5280a6;
+
 }
 
 * {
@@ -158,6 +162,26 @@ img {
 
 }
 
+.back {
+
+    display: flex;
+    align-items: center;
+
+    color: var(--back_text);
+    font-variant: all-small-caps;
+    padding-left: 5%;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+.back img {
+    width: 10%;
+}
+.back p {
+    margin-left: 2%;
+}
+
 .bar-chart {
     width: 100%;
     height: 100%;
@@ -208,6 +232,40 @@ img {
     font-size: 0.65em;
 
     align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    width: 100%;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.card {
+    width: 100%;
+
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.card .icon {
+    display: block;
+}
+.card .icon img { /** TODO Remove height px. Find a way to use % This is a workaround **/
+    height: 3.5em;
+}
+.card .text {
+    display: block;
+    width: 100%;
+
+    color: var(--object-text);
+    font-size: 0.6em;
+}
+
+.scheme {
+    width: 100%;
+    padding: 10%;
 }
 
 .loader {

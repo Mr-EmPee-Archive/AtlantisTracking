@@ -1,6 +1,6 @@
 let map = document.getElementById("map");
 let continents = map.getElementsByClassName("continent");
-let continent_pin_positions = [["-120%", "0%"], ["-50%", "-90%"], ["55%", "-90%"], ["120%", "0%"]];
+let continent_pin_positions = [["-110%", "-40%"], ["0%", "-110%"], ["110%", "-40%"]];
 
 const continent_handler = (e) => {
 
@@ -40,12 +40,15 @@ function selectTier(element, tier) {
         lastSelectTier[0].classList.remove("selected");
     }
 
-    element.classList.add("selected")
-    let continent = element.parentElement;
-    if(continent.classList.contains("continent")) {
-        continent.classList.add("selected");
+    if(element != null) {
+        element.classList.add("selected")
+        let continent = element.parentElement;
+        if (continent.classList.contains("continent")) {
+            continent.classList.add("selected");
+        }
+        loadData("tiers/" + tier + ".php");
+    } else {
+        loadData('default');
     }
-
-   loadData("tiers/" + tier + ".php");
 
 }

@@ -33,25 +33,6 @@
 
     }
 
-    function print_bar_chart($percentage, $color) {
-
-        $value = $percentage / 100;
-
-        $height = 200 * $value;
-
-        echo '
-        <svg class="bar-chart" viewBox="0 0 75 200">
-            <path class="top" d="M25, ' . 200-$height . ' l50 0 l-25 25 l-50 0 Z" fill="' . $color .'"></path>
-            <path d="M25, ' . 200-$height . ' l50 0 l-25 25 l-50 0 Z" fill="rgba(0, 0, 0, 0.1)"></path>
-            <path class="front-side" d="M0 200 L50 200 L50 ' . 225-$height . ' l-50 0 Z" fill="' . $color .'"></path>
-            <path class="right-side" d="M50 200 L75 175 L75 ' . 200-$height . ' l-25 25 Z" fill="' . $color .'"></path>
-            <path d="M50 200 L75 175 L75 ' . 200-$height . ' l-25 25 Z" fill="rgba(0, 0, 0, 0.2)"></path>
-        </svg>
-        ';
-
-
-    }
-
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +73,7 @@
 
                 <div id="map">
                     <img src="assets/map.svg" alt="map">
-                    <div id="italy" class="pin" onclick="selectTier(this, 'tier_5')">
+                    <div id="italy" class="pin" onclick="selectTier(this, 'tier_4')">
                         <svg viewBox="0 0 235 324" xmlns="http://www.w3.org/2000/svg">
                             <path d="M234.523 108.285C234.523 48.9219 186.434 0.8125 127.09 0.8125C67.75 0.8125 19.6367 48.9219 19.6367 108.285C19.6367 127.188 24.9062 140.188 24.9062 140.188C29.4102 151.273 33.0352 160.359 32.9375 160.359C32.8438 160.359 37.6758 168.855 43.6719 179.227L69.0508 223.195C75.0273 233.566 84.8242 250.559 90.8203 260.926L116.203 304.879C122.184 315.246 131.977 315.246 137.977 304.879L163.336 260.926C169.332 250.559 179.129 233.566 185.105 223.195L210.504 179.227C216.484 168.855 221.312 160.359 221.219 160.359C221.121 160.359 224.746 151.273 229.25 140.188C229.25 140.188 234.523 127.188 234.523 108.285Z"/>
                             <path d="M202.148 108.285C202.148 149.758 168.527 183.371 127.09 183.371C85.6289 183.371 52.0273 149.758 52.0273 108.285C52.0273 66.8086 85.6289 33.1992 127.09 33.1992C168.527 33.1992 202.148 66.8086 202.148 108.285Z" fill="white"/>
@@ -124,7 +105,6 @@
                         <div onclick="selectTier(this, 'tier_1')" style="transform: translate(0px);">T<span>1</span></div>
                         <div onclick="selectTier(this, 'tier_2')" style="transform: translate(0px);">T<span>2</span></div>
                         <div onclick="selectTier(this, 'tier_3')" style="transform: translate(0px);">T<span>3</span></div>
-                        <div onclick="selectTier(this, 'tier_4')" style="transform: translate(0px);">T<span>4</span></div>
                     </div>
                 </div>
 
