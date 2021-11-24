@@ -70,9 +70,20 @@
         </div>
         <div id="main-container" class="container vertical">
 
-            <div id="alert">You should use the smartphone to surf this website</div>
             <div id="header" class="container center middle">
                 <img src="assets/logo.svg" alt="logo">
+
+                <div class="menu">
+                    <div class="content">
+                        <button class="close-menu"></button>
+                        <ul class="links">
+                            <li>
+                                <a href="https://atlantisheadwear.com/faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
             <?php print_separator('Interact with the map<br>explore the stages of your hat') ?>
@@ -125,6 +136,7 @@
         </div>
 
         <script src="js/website_loader.js"></script>
+        <script src="js/menu_handler.js"></script>
         <script src="js/data_handler.js"></script>
         <script src="js/map_handler.js"></script>
 
